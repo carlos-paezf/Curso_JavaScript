@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document2</title>
+    <!--Vincular el directorio del archivo js-->
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <h1>Diferencia entre:</h1><br>
+
+    <h2>- var</h2>
+    <ul>Puede estar sin declararse ✔</ul>
+    <ul>Puede (re)inicializarse ✔</ul>
+    <ul>Puede (re)asignarse ✔</ul>
+    <ul>Puede afectarle el Hoisting ✔</ul>
+    <ul>Su contexto es: Global (puede actualizarse) var está en desuso por sus inesperados efectos colaterales ya que pertenece al entorno global y es afectada por el Hoisting.</ul>
+
+    <h2>- let</h2>
+    <ul>Puede estar sin declararse ✔</ul>
+    <ul>Puede (re)inicializarse ✖</ul>
+    <ul>Puede (re)asignarse ✔</ul>
+    <ul>Puede afectarle el Hoisting ✖</ul>
+    <ul>Su contexto es: Bloque let sería un reemplazo de var y se recomienda usar por defecto sobre todo cuando es necesario re apuntar a una variable.</ul>
+
+    <h2>- const</h2>
+    <ul>Puede estar sin declararse ✖</ul>
+    <ul> Puede (re)inicializarse ✖</ul>
+    <ul> Puede (re)asignarse ✖</ul>
+    <ul> Puede afectarle el Hoisting ✖</ul>
+    <ul> Su contexto es: Bloque (no puede actualizarse)</ul>
+    <ul> const es inmutable por eso se utiliza para valores fijos que no deberían ser modificados nunca, por ejemplo una URL o el valor de PI, pero esto último no aplica cuando usamos const con objetos.</ul>
+</body>
+
+</html>
